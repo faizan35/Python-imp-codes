@@ -18,7 +18,7 @@ def write_files_to_output(directory, output_dir):
                 os.makedirs(output_subdir, exist_ok=True)
 
                 # Write content to a separate file in the output directory
-                output_filepath = os.path.join(output_subdir, f"{filename}_output.txt")
+                output_filepath = os.path.join(output_subdir, f"{filename}.txt")
                 with open(output_filepath, 'w') as out:
                     out.write(f"Filename: {filename}\n")
                     out.write(f"Filepath: {os.path.join(relative_path, filename)}\n")
