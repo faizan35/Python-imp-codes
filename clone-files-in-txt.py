@@ -22,13 +22,14 @@ def write_files_to_output(directory, output_dir):
                 with open(output_filepath, 'w') as out:
                     out.write(f"Filename: {filename}\n")
                     out.write(f"Filepath: {os.path.join(relative_path, filename)}\n")
-                    out.write(f"Content:\n{content}\n")
+                    out.write("=" * 50 + "\n")
+                    out.write(f"\n{content}\n")
                     out.write("=" * 50 + "\n")
             except Exception as e:
                 print(f"Could not read file {filepath} due to {e}")
 
 if __name__ == "__main__":
     dir_to_search = r'paste-your-path-here'
-    output_directory = r'paste-your-output-path-here'
+    output_directory = r'paste-your-path-here'
     write_files_to_output(dir_to_search, output_directory)
     print(f"Output written to {output_directory}")
