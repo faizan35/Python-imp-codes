@@ -1,5 +1,10 @@
 # Python Codes
 
+## Clone Repo
+```bash
+git clone https://github.com/faizan35/Python-imp-codes.git
+```
+
 ## Contents
 
 - [Python Codes](#python-codes)
